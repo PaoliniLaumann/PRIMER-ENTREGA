@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+</head>
+<body style="background-color: rgba(107, 105, 105, 0.829);">
+    <div class="container">
+        <h3 class="text-center text-light">Agregar productos al inventario</h3>
+    <form id="formDescription" class="container d-flex flex-column form-control w-25">
+        <input name="name" placeholder="Nombre del producto" class="mt-1">
+        <input name="desc" placeholder="Descripción del producto"  class="mt-1">
+        <input name="code" placeholder="Código de producto"  class="mt-1">
+        <input name="img" placeholder="Imagen del producto (url)"  class="mt-1">
+        <input name="price" placeholder="Precio"  class="mt-1">
+        <input name="stock" placeholder="Cantidad a stock"  class="mt-1">
+        <button type="submit" id="btnAddProd" class="btn btn-primary w-25 mt-1">Enviar</button>
+    </form>
+    </div>
+    <hr class="text-light">
+    <hr class="text-light">
+    <h3 class="text-center text-light">Cards</h3>
+    <div>
+        <h5 class="text-center text-light">Filtrar (con click)</h5>
+        <div id="toFilter" class="d-flex justify-content-center"></div>
+    </div>
+
+    <hr class="text-light">
+    <hr class="text-light">
+
+    <div class="d-flex justify-content-center">
+        <input name="deleteProd" type="number" id="inputDelete" placeholder="Escribe el id de producto para borrarlo"  class="mt-1 text-center" style="width: 300px;">
+        <button id="btnDelete" class="btn btn-primary mx-1">Borrar</button>
+    </div>
+    
+    <div id="cards" class="d-flex justify-content-center mt-4 flex-wrap"></div>
+    <h3 class="text-center text-light">Modifica un producto</h3>
+    <div>
+        <form id="formModify" class="container d-flex flex-column form-control w-25">
+            <input name="id" type="number" placeholder="id del producto" class="mt-1">
+            <input name="name" placeholder="Nombre del producto" class="mt-1">
+            <input name="desc" placeholder="Descripción del producto"  class="mt-1">
+            <input name="code" placeholder="Código de producto"  class="mt-1">
+            <input name="img" placeholder="Imagen del producto (url)"  class="mt-1">
+            <input name="price" placeholder="Precio"  class="mt-1">
+            <input name="stock" placeholder="Cantidad a stock"  class="mt-1">
+            <button type="submit" id="btnModify" class="btn btn-primary w-25 mt-1">Enviar</button>
+    </form>
+    </div>
+    
+    <hr class="text-light">
+    <hr class="text-light">
+    <div class="">
+        <div>
+            <h3 class="text-center text-light">Carrito</h3>
+        <form action="/api/cart" method="post" class="d-flex justify-content-center">
+            <button type="submit" class="btn btn-primary w-25 mt-1 text-light">Crear carrito</button>
+        </form>
+        </div>
+
+        <hr class="text-light">
+        <hr class="text-light">
+        <div>
+            <h3 class="text-center text-light">Carrito actual</h3>
+            <div id="cartView" class="d-flex flex-wrap container"></div>
+        </div>
+        <hr class="text-light">
+        <hr class="text-light">
+        
+       
+    </div>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+    <script src="./js/products.js"></script>
+    <script src="./js/cart.js"></script>
+</body>
+</html>

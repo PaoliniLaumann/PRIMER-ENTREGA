@@ -1,0 +1,46 @@
+[{
+    "id": 923055,
+    "name": "BONDIOLA",
+    "price": "1200",
+    "desc": "primera calidad",
+    "img": "https://www.liliana.com.ar/wp-content/uploads/2016/08/liliana_receta_bondiola-sal.jpg",
+    "stock": "120",
+    "code": "GERMAN100",
+    "timestamp": 1669143606914
+}, {
+    "id": 40875,
+    "name": "MILANESA",
+    "price": "1450",
+    "desc": "primera calidad",
+    "img": "https://vinomanos.com/wp-content/uploads/2019/09/Milanesa-perfecta.jpg",
+    "stock": "30",
+    "code": "GERMAN100",
+    "timestamp": 1669143650240
+}, {
+    "id": 863208,
+    "name": "LOMO",
+    "price": "1200",
+    "desc": "primera calidad",
+    "img": "https://imagesvc.meredithcorp.io/v3/mm/image?url=https%3A%2F%2Fstatic.onecms.io%2Fwp-content%2Fuploads%2Fsites%2F21%2F2017%2F03%2F19%2Flomo-de-cerdo-al-horno-2000.jpg&q=60",
+    "stock": "120",
+    "code": "GERMAN100",
+    "timestamp": 1669143686571
+}, {
+    "id": 539143,
+    "name": "PIZZA",
+    "price": "1250",
+    "desc": "primera calidad",
+    "img": "https://vinomanos.com/wp-content/uploads/2019/09/Milanesa-perfecta.jpg",
+    "stock": "180",
+    "code": "GERMAN100",
+    "timestamp": 1669143748850
+}, {
+    "id": 111607,
+    "name": "HAMBURGUESA",
+    "price": "1500",
+    "desc": "primera calidad",
+    "img": "https://www.pequerecetas.com/wp-content/uploads/2013/07/hamburguesas-caseras-receta.jpg",
+    "stock": "145",
+    "code": "GERMAN100",
+    "timestamp": 1669145351420
+}]
